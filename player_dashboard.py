@@ -59,13 +59,13 @@ if players_df is not None:
     col1, col2 = st.columns(2)
     
     with col1:
-        st.subheader("📊 Dataset Overview")
+        st.subheader(" Dataset Overview")
         st.write(f"Total Players: {len(filtered_df):,}")
         st.write(f"Countries: {len(selected_countries)}")
         st.write(f"Positions: {len(selected_positions)}")
     
     with col2:
-        st.subheader("💰 Market Value Statistics")
+        st.subheader(" Market Value Statistics")
         st.write(f"Total Market Value: €{filtered_df['market_value_in_eur'].sum():,.2f}")
         st.write(f"Average Market Value: €{filtered_df['market_value_in_eur'].mean():,.2f}")
         st.write(f"Highest Market Value: €{filtered_df['market_value_in_eur'].max():,.2f}")
